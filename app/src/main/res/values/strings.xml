@@ -8,4 +8,7 @@
     <string name="CopyInfo">© Todos los derechos reservados\nDesigned by: Edward J. Pineda\n2022–2025</string>
     <string name="LoginTitle">Bienvenido al Tour UNICAH</string>
     <string name="LoginSubtitle">Inicia sesión para continuar</string>
+    <string name="WelcomeTitle">¡Bienvenido, %1$s!</string>
+    <string name="WelcomeDescription">Descubre la historia y belleza de nuestro campus universitario a través de este recorrido interactivo</string>
+    <string name="WelcomeButtonText">Comenzar Tour</string>
 </resources>
