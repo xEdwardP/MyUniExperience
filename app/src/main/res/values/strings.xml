@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyUniExperience</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="start_tour">Comenzar Tour</string>
+    <string name="next">Siguiente</string>
+    <string name="CopyInfo">© Todos los derechos reservados\nDesigned by: Edward J. Pineda\n2022–2025</string>
+    <string name="LoginTitle">Bienvenido al Tour UNICAH</string>
+    <string name="LoginSubtitle">Inicia sesión para continuar</string>
 </resources>
