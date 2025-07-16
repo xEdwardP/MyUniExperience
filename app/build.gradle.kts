@@ -7,6 +7,10 @@ android {
     namespace = "com.example.myuniexperience"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.myuniexperience"
         minSdk = 24
@@ -45,4 +49,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
 }
