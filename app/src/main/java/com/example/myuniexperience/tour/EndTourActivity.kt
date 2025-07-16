@@ -1,6 +1,8 @@
 package com.example.myuniexperience.tour
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,11 +23,16 @@ class EndTourActivity : AppCompatActivity() {
             Año: 2025
             
             Integrantes:
-            - Edward J. Pineda
-            - Stefano A. Ponce
-            - José  B. Alvarado
-            - Hector J. Villeda
-            - Omar A. Pinto
+            Edward J. Pineda
+            Stefano A. Ponce
+            José  B. Alvarado
+            Hector J. Villeda
+            Omar A. Pinto
         """.trimIndent()
+
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            startActivity(Intent(this, WelcomeActivity::class.java))
+        }
     }
 }
