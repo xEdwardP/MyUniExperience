@@ -18,6 +18,9 @@ class EndTourActivity : AppCompatActivity() {
         binding = ActivityEndTourBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
         binding.tvTeamInfo.text = """
             Curso: Programacion Móvil I
             Año: 2025
@@ -31,8 +34,19 @@ class EndTourActivity : AppCompatActivity() {
         """.trimIndent()
 
         val btnHome = findViewById<Button>(R.id.btnHome)
+        val fullName = intent.getStringExtra("FULL_NAME") ?: "Visitante"
         btnHome.setOnClickListener {
-            startActivity(Intent(this, WelcomeActivity::class.java))
+
+            val intent = Intent(this, WelcomeActivity::class.java)
+            intent.putExtra("FULL_NAME", fullName)
+            startActivity(intent)
         }
+
+        val btnSalir = findViewById<Button>(R.id.btnSalir)
+        btnSalir.setOnClickListener{
+            finishAffinity()
+            System.exit(0)
+        }
+
     }
 }
