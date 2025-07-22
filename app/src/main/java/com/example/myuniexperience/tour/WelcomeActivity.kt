@@ -22,13 +22,15 @@ class WelcomeActivity : AppCompatActivity() {
         }
 
         val fullName = intent.extras?.getString("FULL_NAME").orEmpty()
-//        val fullName = intent.getStringExtra("FULL_NAME") ?: "Visitante"
         findViewById<TextView>(R.id.tvWelcome).text = getString(R.string.WelcomeTitle, fullName)
 
         val btnStartTour = findViewById<MaterialButton>(R.id.btnStartTour)
 
         btnStartTour.setOnClickListener {
-            startActivity(Intent(this, TourActivity::class.java))
+            val fullName = intent.getStringExtra("FULL_NAME") ?: "Visitante"
+            val intent = Intent(this, TourActivity::class.java)
+            intent.putExtra("FULL_NAME", fullName)
+            startActivity(intent)
         }
     }
 }

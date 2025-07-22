@@ -17,6 +17,9 @@ class LandmarkPagerAdapter(
         val tvTitle: TextView = itemView.findViewById(R.id.tvTitle)
         val ivLandmark: ImageView = itemView.findViewById(R.id.ivLandmark)
         val tvDescription: TextView = itemView.findViewById(R.id.tvDescription)
+        init {
+            tvDescription.movementMethod = android.text.method.ScrollingMovementMethod()
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LandmarkViewHolder {
