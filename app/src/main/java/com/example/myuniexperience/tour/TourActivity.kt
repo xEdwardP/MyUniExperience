@@ -31,7 +31,7 @@ class TourActivity : AppCompatActivity() {
             Landmark(
                 "Monumento a la virgen",
                 R.drawable.tour_monumento_virgen,
-                "Con más de 500,000 volúmenes, la biblioteca central es el corazón académico del campus."
+                "Monumento a la virgen, ubicado unos pasos adelante de la entrada principal."
             ),
             Landmark(
                 "Edificio Santa Rosa de Lima",
@@ -120,7 +120,7 @@ class TourActivity : AppCompatActivity() {
             ),
             Landmark(
                 "Cámara Gesell",
-                R.drawable.tour_lab_robotica,
+                R.drawable.tour_gesell,
                 "Sala especializada para observación e investigación psicológica. Permite la evaluación de conductas a través de un espejo unidireccional, muy útil en prácticas clínicas y entrevistas."
             ),
             Landmark(

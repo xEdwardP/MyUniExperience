@@ -18,9 +18,6 @@ class EndTourActivity : AppCompatActivity() {
         binding = ActivityEndTourBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
         binding.tvTeamInfo.text = """
             Curso: Programacion Móvil I
             Año: 2025

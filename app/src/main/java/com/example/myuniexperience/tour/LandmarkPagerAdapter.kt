@@ -20,8 +20,6 @@ class LandmarkPagerAdapter(
         init {
             tvDescription.movementMethod = android.text.method.ScrollingMovementMethod()
         }
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LandmarkViewHolder {
